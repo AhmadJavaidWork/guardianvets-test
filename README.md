@@ -5,7 +5,7 @@ Please follow these steps to run the server locally
 1. Clone the repository.
 2. Create a file named development.env in the project's root folder
 3. Copy the contents of .env.example file and paste them in development.env
-4. Then rename those variables according to your needs.
+4. Then assign values to those variables according to your needs.
 5. Then run npm install
 
 ## Commands
