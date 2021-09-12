@@ -3,10 +3,10 @@
 Please follow these steps to run the server locally
 
 1. Clone the repository.
-2. Create a file named "development.env" in the project's root folder.
-3. Copy the contents of .env.example file and paste them in "development.env".
+2. Create a file named `development.env` in the project's root folder.
+3. Copy the contents of `.env.example` file and paste them in `development.env`.
 4. Then assign values to those variables according to your needs.
-5. Then run npm install.
+5. Then run `npm install`.
 
 ## Cli
 
@@ -18,37 +18,41 @@ node ./src/cli -h
 
 ## Postman Collection
 
-The postman collection is attached in this repo named "Postman_Collection.json"
+The postman collection is attached in this repo named `Postman_Collection.json`
 
 ## Testing with postman
 
 ### Register api
 
-1. Make a POST request to "http://localhost:9000/api/user/register".
-2. Set the Authorization to use "Bearer Token" and set the token value to the "MASTER_KEY" defined in the development.env file.
+1. Make a POST request to `http://localhost:9000/api/user/registe`.
+2. Set the Authorization to use `Bearer Token` and set the token value to the `MASTER_KEY` defined in the `development.env` file.
 3. Set the Body to use raw and select JSON and use the following JSON format.
 
+```bash
 {
   "email": "ahmad@gmail.com",
   "password": "12345678"
 }
+```
 
 ### Login api
 
-1. Make a POST request to "http://localhost:9000/api/user/sign-in".
-2. Set the Authorization to use "Basic Auth" and enter the email and password in the fields.
+1. Make a POST request to `http://localhost:9000/api/user/sign-in`.
+2. Set the Authorization to use `Basic Auth` and enter the email and password in the fields.
 3. Set the Body to use raw and select JSON and use the following JSON format.
 
+```bash
 {
   "access_token": "MASTER_KEY"
 }
+```
 
-where "MASTER_KEY" is defined in the development.env file.
+where `MASTER_KEY` is defined in the development.env file.
 
 ### Logout api
 
-1. Make a GET request to "http://localhost:9000/api/user/sign-out".
-2. Set the Authorization to use "Bearer Token" and set the token value to the token returned by the Login api in response.
+1. Make a GET request to `http://localhost:9000/api/user/sign-out`.
+2. Set the Authorization to use `Bearer Token` and set the token value to the token returned by the Login api in response.
 
 ## Commands
 
