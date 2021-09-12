@@ -8,6 +8,12 @@ Please follow these steps to run the server locally
 4. Then assign values to those variables according to your needs.
 5. Then run npm install
 
+## Cli
+To run cli use the following command
+```bash
+node ./src/cli -h
+```
+
 ## Commands
 
 After you generate your project, these commands are available in `package.json`.
@@ -35,9 +41,6 @@ $ npm run dev
 Express server listening on http://0.0.0.0:9000, in development mode
 ```
 
-If you choose to generate the authentication API, you can start to play with it.
-
-> Note that creating and authenticating users needs a master key (which is defined in the `.env` file)
 
 ## Directory structure
 
