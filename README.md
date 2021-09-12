@@ -29,8 +29,8 @@ The postman collection is attached in this repo named "Postman_Collection.json"
 3. Set the Body to use raw and select JSON and use the following JSON format.
 
 {
-"email": "ahmad@gmail.com",
-"password": "12345678"
+  "email": "ahmad@gmail.com",
+  "password": "12345678"
 }
 
 ### Login api
@@ -40,7 +40,7 @@ The postman collection is attached in this repo named "Postman_Collection.json"
 3. Set the Body to use raw and select JSON and use the following JSON format.
 
 {
-"access_token": "MASTER_KEY"
+  "access_token": "MASTER_KEY"
 }
 
 where "MASTER_KEY" is defined in the development.env file.
